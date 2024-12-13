@@ -1,0 +1,153 @@
+/* Style général de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Titre principal */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label des champs */
+label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+/* Champs de saisie */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="button"],
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Mise en évidence des champs */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Bouton d'envoi */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Bouton de retour */
+button[onclick] {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    width: auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+button[onclick]:hover {
+    background-color: #0056b3;
+}
+
+/* Sections supplémentaires */
+h2 {
+    margin-top: 30px;
+    color: #333;
+    font-size: 20px;
+}
+
+/* Séparation des sections */
+hr {
+    border: 1px solid #eee;
+    margin: 30px 0;
+}
+
+/* Bloc des partenaires */
+.partner-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.partner-block input {
+    width: calc(33.33% - 10px);
+}
+
+/* Contrôles des partenaires */
+.control {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.addPartner,
+.removePartner {
+    width: 48%;
+    background-color: #ffc107;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.addPartner:hover,
+.removePartner:hover {
+    background-color: #e0a800;
+}
+
+/* Message de confirmation */
+.success-message {
+    background-color: #d4edda;
+    padding: 20px;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    padding: 20px;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    margin-top: 20px;
+    border-radius: 4px;
+}

@@ -1,0 +1,101 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #5f6a73;
+}
+
+#form-container {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #7f8c8d;
+}
+
+/* Champs de saisie */
+input[type="text"], input[type="number"], input[type="date"] {
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Styles pour les boutons */
+.addPartner, .removePartner, button[type="submit"] {
+    background-color: #74a1d1;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.addPartner:hover, .removePartner:hover, button[type="submit"]:hover {
+    background-color: #5e8bbd;
+}
+
+/* Style pour le bouton de thème */
+#position {
+    background-color: #b0bec5;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#position:hover {
+    background-color: #9faab5;
+}
+
+/* Style pour la date et la section générale */
+#auj {
+    font-weight: bold;
+    color: #333;
+}
+/* La classe partner-block ne doit être appliquée qu'aux blocs ajoutés dynamiquement */
+.partner-block {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.partner-block input {
+    border: none;
+    display: block;
+    margin-bottom: 5px;
+}

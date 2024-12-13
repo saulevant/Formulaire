@@ -1,0 +1,160 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9; 
+  color: #333;
+  line-height: 1.6;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 2.3em;
+  text-align: center;
+  color: #5c6bc0; /* Bleu doux */
+  margin-bottom: 20px;
+}
+
+h2, h3 {
+  color: #7e57c2; /* Violet doux */
+  margin-top: 20px;
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  color: #555; /* Gris doux */
+}
+
+/* Style du formulaire */
+form {
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  transition: transform 0.3s ease;
+}
+
+form p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Champs du formulaire */
+form input[type="text"], form input[type="date"], form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  background-color: #f1f1f1; /* Fond clair des champs */
+}
+
+form input[type="text"]:focus, form input[type="date"]:focus, form textarea:focus {
+  outline: none;
+  border-color: #7e57c2; /* Violet doux au focus */
+  background-color: #e8eaf6;
+}
+
+/* Boutons */
+form input[type="submit"], button {
+  background-color: #7e57c2; /* Violet doux */
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+form input[type="submit"]:hover, button:hover {
+  background-color: #5c6bc0; /* Bleu plus foncé au hover */
+}
+
+button {
+  background-color: #66bb6a; 
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #66bb6a; /* Vert plus foncé au hover */
+}
+
+/* Mise en forme des sections contenant les partenaires */
+section.partner-info {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f3f4f6; /* Fond très clair */
+  border-left: 6px solid #81c784; /* Bordure verte douce */
+  border-radius: 8px;
+}
+
+section.partner-info p {
+  font-size: 1.1em;
+  margin: 8px 0;
+  color: #555;
+}
+
+/* Titres et sous-titres des sections */
+h3 {
+  font-size: 1.2em;
+  margin-top: 15px;
+  font-weight: normal;
+  color: #7e57c2;
+}
+
+/* Style pour les champs de saisie et les informations sensibles */
+code {
+  background-color: #f9f9f9;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: Consolas, monaco, monospace;
+  font-size: 1em;
+}
+
+/* Disposition des éléments sur la page */
+@media (max-width: 768px) {
+  body {
+    margin: 10px;
+  }
+  
+  form {
+    padding: 15px;
+    max-width: 100%;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+
+  button, form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+  }
+}
+
+/* Style pour le bouton "Créer" */
+#createButton {
+  display: block;
+  width: 200px;  /* Ajustez la largeur selon votre préférence */
+  margin: 30px auto 0; /* Centrer et ajouter un espace avant le bouton */
+  background-color: #66bb6a; /* Vert clair pour le bouton de création */
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+#createButton:hover {
+  background-color: #4caf50; /* Vert plus foncé au survol */
+}
