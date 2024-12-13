@@ -95,7 +95,6 @@ function update_form($id, $copies, $nb_partenaires, $date_debut, $date_fin, $con
   }
 }
 
-
   function del_form($id) {
     $connexion = connect();
     
